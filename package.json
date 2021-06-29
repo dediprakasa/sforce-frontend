@@ -1,0 +1,25 @@
+{
+  "name": "warna",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.0",
+    "bootstrap": "^4.6.0",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.4",
+    "sweetalert2": "^11.0.18"
+  },
+  "devDependencies": {
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1"
+  }
+}
