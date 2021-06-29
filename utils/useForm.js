@@ -6,6 +6,7 @@ const useForm = (validate) => {
   const dispatch = useDispatch()
   const [attempted, setAttempted] = useState(false)
   const [values, setValues] = useState({
+    salutation: '',
     firstName: '',
     lastName: '',
     email: '',
@@ -15,6 +16,7 @@ const useForm = (validate) => {
 
   const resetValues = () => {
     setValues({
+      salutation: '',
       firstName: '',
       lastName: '',
       email: '',
@@ -45,6 +47,7 @@ const useForm = (validate) => {
   }
 
   const handleSubmit = (e) => {
+    console.log(values, '{{{')
     e.preventDefault()
     setAttempted(true)
     setErrors(validate(values))

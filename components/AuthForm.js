@@ -67,7 +67,12 @@ const AuthForm = () => {
             <Form onSubmit={handleSubmit}>
               <Form.Group controlId="formSalutation">
                 <Form.Label>Salutation</Form.Label>
-                <Form.Control as="select" name="salutation" type="text">
+                <Form.Control
+                  as="select"
+                  name="salutation"
+                  type="text"
+                  onChange={handleChange}
+                >
                   {salutations.map((salutation, index) => {
                     return <option key={index}>{salutation}</option>
                   })}
